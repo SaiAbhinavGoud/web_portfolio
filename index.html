@@ -9,7 +9,424 @@
     <link rel="stylesheet" href="/style.css">
     <title>SAI ABHINAV | PORTFOLIO</title>
 </head>
+<style>
+body {
+    font-family: Secular One;
+    color: aliceblue;
+    background-color: black;
+    margin: 0px;
+    padding: 0px;
+}
 
+.content {
+    position: absolute;
+    width: 40%;
+    top: 29%;
+    padding-left: 70%;
+    transform: translate(-50%);
+}
+
+h4 {
+    color: aliceblue;
+    font-size: 3vw;
+}
+
+h4:hover {
+    color: violet;
+    transition: 0.5s;
+}
+
+.left {
+    display: inline-block;
+    font-size: 24px;
+    position: absolute;
+    left: 6px;
+    top: 20px;
+}
+
+
+/* .left img {
+    width: 136px;
+    border-radius: 15px;
+    filter: invert(100%);
+}  */
+
+.left ul li {
+    list-style: none;
+}
+
+.left li a {
+    color: aliceblue;
+    letter-spacing: 1px;
+}
+
+.left span {
+    color: violet;
+    transition: ease-in 0.2s;
+}
+
+.left span:hover {
+    color: purple;
+}
+
+.navbar {
+    background-color: transparent;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    padding-right: 0%;
+    padding-left: 65%;
+}
+
+
+/*  .navbar ul {
+    overflow: auto;
+}
+
+.navbar ul li {
+     float: right;     
+    display: inline-block;
+    margin: 10px 5px;
+}
+
+.navbar li a {
+    list-style-type: none;
+    padding: 10px 28px;
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.navbar li a:hover {
+    color: violet;
+    font-size: 20.5px;
+    transition: .2s;
+    margin: 20px 0px 20px;
+} */
+
+header a {
+    text-decoration: none;
+}
+
+header {
+    padding-top: 1.5%;
+    font-size: 1.4vw;
+    background-color: transparent;
+    height: 50px;
+    display: flex;
+    padding-left: 70%;
+    justify-content: space-between;
+}
+
+nav ul {
+    list-style: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav ul a {
+    color: white;
+}
+
+nav ul a:hover {
+    color: violet;
+}
+
+nav ul li {
+    padding: 5px;
+    margin-left: 10px;
+}
+
+nav ul li:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+#hamburger-icon {
+    margin: auto 0;
+    padding-left: 50%;
+    display: none;
+    cursor: pointer;
+}
+
+#hamburger-icon div {
+    width: 35px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+    transition: 0.4s;
+}
+
+.open .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+    transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar2 {
+    opacity: 0;
+}
+
+.open .bar3 {
+    -webkit-transform: rotate(45deg) translate(-6px, -8px);
+    transform: rotate(45deg) translate(-6px, -8px);
+}
+
+.open .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.mobile-menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    height: calc(100vh - 50px);
+    width: 100%;
+}
+
+.mobile-menu li {
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    header nav {
+        display: none;
+    }
+    #hamburger-icon {
+        display: block;
+    }
+}
+
+
+/* .container {
+border: 2px solid red; 
+
+display: inline-block;
+position: absolute;
+left: 20rem;
+top: 9rem;
+
+}*/
+
+.star-1 {
+    position: relatives;
+    background-color: #FFFDFD;
+    top: 50px;
+    left: -10px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    box-shadow: 0 0 1px 1px #FFFDFD, -70px 150px 1px 0 #FFFDFD, 290px 150px 1px -1px #0F00BF, -90px 100px 1px -1px #0C5DCC, 270px 10px 1px 0.11px #FFFDFD, 390px 80px 1px -0.6px #0C5DCC, -30px 120px 3px -1px #0F00BF;
+    animation: pulsate 5s ease;
+    animation-iteration-count: infinite;
+}
+
+.star-2 {
+    position: absolute;
+    background-color: #FFFF00;
+    top: 100px;
+    left: -60px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    box-shadow: 0 0 5px 1px #FFFF00, -99px 30px 1px 0.09px #FFFF00, 355px 30px 0.5px 1px #FFFF00, 400px -30px 1px -1px #FFFF00, 400px 90px 1px -1px #FFFF00, -50px -30px 1px -1px #FFFF00;
+    animation: pulsate 7s ease;
+    animation-iteration-count: infinite;
+}
+
+.moon {
+    background-color: currentColor;
+    position: absolute;
+    /* padding: 10px; */
+    left: 40%;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    box-shadow: 5px 0 10px 3px rgb(229 229 229 / 30%), 0 0 10px 2px rgb(229 229 229 / 30%), 5px 0 10px 3px rgb(229 229 229 / 30%), 0px 0 3px 2px rgb(229 229 229 / 30%);
+    top: 65px;
+    left: 44%;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.moon::after {
+    content: "";
+    background-color: rgba(162, 162, 162, 0.81);
+    display: block;
+    position: absolute;
+    left: 160px;
+    top: 50px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 3px 0 0 1px rgba(98, 98, 98, 0.51), 7px 45px 0 -5px rgba(162, 162, 162, 0.9), 9px 45px 0 -5px rgba(100, 100, 100, 0.51), 35px 20px 0 -10px rgba(162, 162, 162, 0.9), 37px 20px 0 -10px rgba(100, 100, 100, 0.51);
+}
+
+@keyframes pulsate {
+    0% {
+        opacity: 0.0;
+    }
+    50% {
+        opacity: 1.0;
+    }
+    100% {
+        opacity: 0.0;
+    }
+}
+
+.about {
+    display: grid;
+    width: 100%;
+}
+
+.main {
+    width: 60%;
+    position: relative;
+    padding-top: 45%;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about-text h2 {
+    color: white;
+    position: fixed;
+    font-size: 75px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.about-text h5 {
+    color: white;
+    letter-spacing: 2px;
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+}
+
+.about-text p {
+    color: #fcfc;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+}
+
+.service {
+    background: #101010;
+    width: 100%;
+    padding: 100px 0px;
+}
+
+.title h2 {
+    color: white;
+    font-size: 75px;
+    width: 50%;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+
+.card {
+    height: 365px;
+    width: 335px;
+    padding: 20px 35px;
+    background: #191919;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.card i {
+    font-size: 50px;
+    display: block;
+    text-align: center;
+    margin: 25px 0px;
+    color: #f9004d;
+}
+
+h5 {
+    color: white;
+    font-size: 1.4vw;
+    margin-bottom: 15px;
+}
+
+.pra p {
+    color: #fcfc;
+    font-size: 1vw;
+    line-height: 27px;
+    margin-bottom: 25px;
+}
+
+.card .button {
+    background-color: #f9004d;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 9px 22px;
+    border-radius: 30px;
+    transition: .4s;
+}
+
+.card .button:hover {
+    background-color: transparent;
+    border: 2px solid #f9004d;
+    cursor: pointer;
+}
+
+.content h3 {
+    color: rgb(255, 255, 255);
+}
+
+.content h5 {
+    font-size: 1vw;
+    color: antiquewhite;
+}
+
+.content h3:hover {
+    font-size: 20px;
+    color: violet;
+}
+
+
+/* dasfdasf */
+
+footer {
+    position: relative;
+    width: 100%;
+    height: 116px;
+    background: #101010;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.end {
+    position: absolute;
+    color: #f9004d;
+    bottom: 5px;
+    font-size: 14px;
+}
+</style>
 <body>
     <div class="left">
         <ul>
